@@ -75,8 +75,11 @@ export class TodoListComponent{
   }
 
   async save(todo){
-    await todo.save();
+    const isSaved = await todo.save();
     this.editable = false;
+    if (isSaved) {
+      this.refresh();
+    }
   }
 
   search(value: string, $ev){
@@ -97,5 +100,6 @@ export class TodoListComponent{
     const Todo = await this.todoService.getClass();
     this.current = Todo.create();
     this.editable = true;
+    //this.refresh();
   }
 }
