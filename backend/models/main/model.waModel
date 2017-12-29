@@ -1,0 +1,54 @@
+{
+	"toJSON": true,
+	"extraProperties": {
+		"version": "2",
+		"classes": {
+			"Todo": {
+				"panelColor": "#eee",
+				"panel": {
+					"isOpen": "true",
+					"position": {
+						"X": 25,
+						"Y": 20
+					},
+					"pathVisible": true
+				}
+			}
+		},
+		"model": {
+			"scriptMode": "manual",
+			"workspaceLeft": 0,
+			"workspaceTop": 0
+		}
+	},
+	"dataClasses": [
+		{
+			"collectionName": "Todos",
+			"className": "Todo",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"type": "uuid",
+					"primKey": "true",
+					"autosequence": true,
+					"unique": true,
+					"autogenerate": true
+				},
+				{
+					"name": "description",
+					"scope": "public",
+					"type": "string",
+					"kind": "storage"
+				},
+				{
+					"name": "done",
+					"scope": "public",
+					"type": "bool",
+					"kind": "storage"
+				}
+			]
+		}
+	],
+	"type": []
+}

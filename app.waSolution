@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<solution>
+    <project path="./backend/app.waProject"/>
+    <project path="./web/app.waProject"/>
+
+  <file path="./settings.waSettings">
+    <tag name="settings"/>
+  </file>
+  <file path="./directory.waDirectory">
+    <tag name="directory"/>
+  </file>
+</solution>

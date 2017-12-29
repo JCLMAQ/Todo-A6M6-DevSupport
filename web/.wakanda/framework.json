@@ -1,0 +1,158 @@
+{
+  "elements": [
+    {
+      "title": "component",
+      "description": "Generate a new component",
+      "command": "ng g component {{options}}",
+      "options": [
+        {
+          "title": "Element Name",
+          "description": "New component's name",
+          "type": "input",
+          "validator": "",
+          "mandatory": true,
+          "command": "{{value}}"
+        },
+        {
+          "title": "No targeted directory for the component",
+          "description": "Do not create the component elements  in its own directory ",
+          "type": "boolean",
+          "default": false,
+          "values": [
+            {
+              "value": "false",
+              "command": ""
+            },
+            {
+              "value": "true",
+              "command": "--flat"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "directive",
+      "description": "Generate a new directive",
+      "command": "ng g directive {{options}}",
+      "options": [
+        {
+          "title": "Element Name",
+          "description": "New directive's name",
+          "type": "input",
+          "validator": "",
+          "mandatory": true,
+          "command": "{{value}}"
+        }
+      ]
+    },
+    {
+      "title": "pipe",
+      "description": "Generate a new pipe ",
+      "command": "ng g pipe {{options}}",
+      "options": [
+        {
+          "title": "Element Name",
+          "description": "New pipe's name",
+          "type": "input",
+          "validator": "",
+          "mandatory": true,
+          "command": "{{value}}"
+        }
+      ]
+    },
+    {
+      "title": "service",
+      "description": "Generate a new service",
+      "command": "ng g service {{options}}",
+      "options": [
+        {
+          "title": "Element Name",
+          "description": "New service's name",
+          "type": "input",
+          "validator": "",
+          "mandatory": true,
+          "command": "{{value}}"
+        }
+      ]
+    },
+    {
+      "title": "class",
+      "description": "Generate a new class",
+      "command": "ng g class {{options}}",
+      "options": [
+        {
+          "title": "Element Name",
+          "description": "New class's name",
+          "type": "input",
+          "validator": "",
+          "mandatory": true,
+          "command": "{{value}}"
+        },
+        {
+          "title": "Generate a specification file ",
+          "description": "specifies if a spec file is generated",
+          "type": "boolean",
+          "default": false,
+          "values": [
+            {
+              "value": "false",
+              "command": ""
+            },
+            {
+              "value": "true",
+              "command": "--spec"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "module",
+      "description": "Generate a new module",
+      "command": "ng g module {{options}}",
+      "options": [
+        {
+          "title": "Element Name",
+          "description": "New module's name",
+          "type": "input",
+          "validator": "",
+          "mandatory": true,
+          "command": "{{value}}"
+        },
+        {
+          "title": "Generate separate routes module file",
+          "description": "create a separate file my-module-routing.module.ts to store the module routes.\nThe file includes an empty Routes object that you can fill with routes to different components and/or modules.\nThis option also generates a default component with the same name as the module.",
+          "type": "boolean",
+          "default": false,
+          "values": [
+            {
+              "value": "false",
+              "command": ""
+            },
+            {
+              "value": "true",
+              "command": "--routing"
+            }
+          ]
+        },
+        {
+          "title": "Generate a specification file ",
+          "description": "specifies if a spec file is generated",
+          "type": "boolean",
+          "default": false,
+          "values": [
+            {
+              "value": "false",
+              "command": ""
+            },
+            {
+              "value": "true",
+              "command": "--spec"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

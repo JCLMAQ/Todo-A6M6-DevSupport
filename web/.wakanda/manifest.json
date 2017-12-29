@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "name": "Angular",
+  "description": "Angular template compatible with angular-cli. <a href='https://cli.angular.io/' target='_blank'>Learn more</a>",
+  "tags": [
+    "Angular",
+    "angular-cli"
+  ]
+}

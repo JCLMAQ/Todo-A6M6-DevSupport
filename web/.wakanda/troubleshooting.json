@@ -1,0 +1,70 @@
+{
+	"troubleshooting": {
+		"angular-cli-app": {
+			"name": "Angular",
+			"description": "Angular application",
+			"icon": "data:image/png;base64,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",
+			"steps": {
+				"windows": [{
+					"name": "Install Node.js",
+					"dependency": "node",
+					"description": ["<h4>What is Node.js?</h4><p><strong>Node.js</strong> is a <strong>JavaScript</strong> runtime built on Chrome's V8 JavaScript engine that includes the <strong>npm</strong> package manager.</p>", "<h4>Installation</h4><p><a target=\"_blank\" href=\"https://nodejs.org\">Download <strong>Node.js</strong></a> and install it.</p><p><strong>You must restart Wakanda Studio after completing this step.</strong></p>"]
+				}, {
+					"name": "Install Angular CLI",
+					"dependency": "angular-cli",
+					"description": [
+						"<h4>What is Angular CLI?</h4><p><strong>Angular CLI</strong> is a command line utility that allows you to add components, directives pipes, services ..., in addition it allows serving and building your application</p>",
+						"<h4>Installation</h4><p>To install <strong>Angular CLI</strong>, use the <strong>Node Package Manager (npm)</strong> that is provided by Node.js:</p><ol><li>Open the Terminal (start -> run: cmd.exe).</li><li><div>Run this command:</div><pre><code>npm install -g @angular/cli</code></pre></li></ol>"
+					]
+				}, {
+					"name": "End",
+					"description": ["<h4>Additional Information</h4><p>If you have any further questions, please contact us at <a target=\"_blank\" href=\"mailto:support@wakanda.io\">support@wakanda.io</a>.</p>"]
+				}],
+				"mac": [{
+					"name": "Install Node.js",
+					"dependency": "node",
+					"description": ["<h4>What is Node.js?</h4><p><strong>Node.js</strong> is a <strong>JavaScript</strong> runtime built on Chrome's V8 JavaScript engine that includes the <strong>npm</strong> package manager.</p>", "<h4>Installation</h4><p><a target=\"_blank\" href=\"https://nodejs.org\">Download <strong>Node.js</strong></a> and install it.</p><p><strong>You must restart Wakanda Studio after completing this step.</strong></p>", "You installed Node.js, but Wakanda Studio has not found it? <a href='#/issues/4'>Solve this issue</a>"]
+				}, {
+					"name": "Install Angular CLI",
+					"dependency": "angular-cli",
+					"description": [
+						"<h4>What is Angular CLI?</h4><p><strong>Angular CLI</strong> is a command line utility that allows you to add components, directives pipes, services ..., in addition it allows serving and building your application</p>",
+						"<h4>Installation</h4><p>To install <strong>Angular CLI</strong>, use the <strong>Node Package Manager (npm)</strong> that is provided by Node.js:</p><ol><li>Open the Terminal.</li><li><div>Run this command:</div><pre><code>npm install -g @angular/cli</code></pre></li></ol><p><strong>NOTE</strong>: If <strong>NPM</strong> command <u>returns an error</u>, run: <pre><code>sudo npm install -g @angular/cli</code></pre></li></ol><p>"
+					]
+				}, {
+					"name": "End",
+					"description": ["<h4>Additional Information</h4><p>If you have any further questions, please contact us at <a target=\"_blank\" href=\"mailto:support@wakanda.io\">support@wakanda.io</a>.</p>"]
+				}]
+			}
+		}
+	},
+	"issues": [{
+		"title": "Wakanda Studio has not detected my dependencies (node, npm, ionic, ...)",
+		"description": [
+			"<h4>Solution</h4><p>Wakanda Studio looks for your dependencies in your operating system's default folder. If you installed NPM, Node, or other software in a custom location, add the binary folder location in your Wakanda configuration:</p><ol><li>Open Wakanda Studio's <strong>Preferences</strong>.</li><li>In the <strong>General</strong> panel, go to the <strong>Environment variables</strong> section.</li><li>Insert the binary locations (without the binary name at the end) separated by a new line in the PATH field:<div><pre><code>/my/custom/path/one\n/my/custom/path/two</code></pre></div></li><li>Click on the <b>Check</b> button to check the dependencies in the Console.</li></ol>"
+		]
+	}, {
+		"title": "While running my application I could not log-in inside Wakanda Studio",
+		"description": [
+			"<h4>Solution</h4><p>If are able to log-in on a browser but you have troubles inside Wakanda Studio, try clicking these URLs <a href=\"http://127.0.0.1:8081/\">(1)</a> and <a href=\"http://127.0.0.1:8081/app/\">(2)</a> and then try re-opening all the application tabs.</p>"
+		]
+	}, {
+		"title": "The platform I'm looking for is not listed.",
+		"description": [
+			"<p>We support only iOS and Android for native mobile app development. For other platforms, like Windows Phone, you can create a web application with Wakanda and AngularJS.</p><p>Please contact us at <a target=\"_blank\" href=\"mailto:support@wakanda.io\">support@wakanda.io</a> and let us know which platform you need. We'll send you an email as soon an update is available.</p>"
+		]
+	}, {
+		"title": "npm returns a red error that starts with 'npm ERR! Error: EACCES...'.",
+		"description": [
+			"<h4>Solution</h4><p>This error is due to insufficient user permissions. If you are on Windows run the command prompt as an administrator. On MacOS run the same command in the terminal prefixed by 'sudo'.</p>",
+			"<h4>Example for MacOS</h4><p>Instead of</p><div><pre><code>npm install -g ionic</code></pre></div><p>try</p><div><pre><code>sudo npm install -g ionic</code></pre></div>"
+		]
+	}, {
+		"title": "npm returns a red error that starts with 'npm ERR! network connect ETIMEDOUT...'.",
+		"description": [
+			"<h4>Solution</h4><p>In most cases, you might be behind a proxy or have bad network settings.<br>If you are behind a proxy, please make sure that the npm 'proxy' config is set properly.</p>",
+			"<h4>Example</h4><p>In the command prompt/terminal run</p><div><pre><code>npm config set proxy http:<b>//proxy.company.com:8080</b>\nnpm config set https-proxy http:<b>//proxy.company.com:8080</b></code></pre></div><p>If you are working behind a proxy in a \"windows\" domain, add the domain name into the proxy url:</p><div><pre><code>npm config set proxy http:<b>//domain%5Cuser:password@proxy.company.com:8080</b>\nnpm config set https-proxy http:<b>//domain%5Cuser:password@proxy.company.com:8080</b></code></pre></div><p>You need to encode the backslash as an http uri string: <strong>%5C</strong></p>",
+			"<h4>Additional Information</h4><p>It could also be necessary to point the npm registry to the http source:</p><div><pre><code>npm config set registry \"http://registry.npmjs.org\"\nnpm config set strict-ssl false</code></pre></div>"
+		]
+	}]
+}

@@ -1,0 +1,23 @@
+{
+	"dependencies": {
+		"node": {
+			"name": "Node",
+			"text": "Install Node.JS",
+			"command": {
+        	   "windows": "node -v | findstr \"^v[6-8]\" || echo You are running an old version of node! Please consider updating to the most recent version.",
+        	   "mac": "node -v | egrep v[6-8]  || echo You are running an old version of node! Please consider updating to the most recent version."
+     		 },
+			"troubleshooting": {
+				"step": 0
+			}
+		},
+		"angular-cli": {
+			"name": "Angular Cli",
+			"text": "Install Angular Cli",
+			"command": "ng -v",
+			"troubleshooting": {
+				"step": 1
+			}
+		}
+	}
+}

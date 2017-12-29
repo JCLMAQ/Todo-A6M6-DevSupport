@@ -1,0 +1,70 @@
+[
+  {
+    "taskName": "start",
+    "title": "Running Angular App",
+    "type": "aggregate",
+    "dependencies": [
+      "package-install",
+      "update-proxy",
+      "npm-start"
+    ]
+  },
+  {
+    "taskName": "package-install",
+    "title": "Installing dependencies",
+    "type": "package",
+    "options": {
+      "action": "install",
+      "path": "{{componentPath}}",
+      "command": "npm install",
+      "args": []
+    },
+    "stateVerifier" : {
+    	"name" : "package"
+    }
+  },
+  {
+    "taskName": "update-proxy",
+    "title": "Updating DEV server proxy settings",
+    "type": "package",
+    "options": {
+      "action": "update-proxy",
+      "path": "{{componentPath}}",
+      "command": "node update-proxy.js",
+      "args": [
+        "--serverUrl",
+        "{{settings.serverUrl}}"
+      ]
+    },
+    "stateVerifier" : {
+    	"name" : "package"
+    }
+  },
+  {
+    "taskName": "npm-start",
+    "title": "Starting the App",
+    "type": "package",
+    "options": {
+      "action": "start",
+      "path": "{{componentPath}}",
+      "command": "npm run start",
+      "args": [
+        "--",
+        "--proxyConfig",
+        "proxy.conf.json",
+        "--open",
+        "--port",
+        "{{port}}"
+      ],
+      "variables": [
+        {
+          "name": "port",
+          "generator": "port",
+          "options": {
+            "port": 4200
+          }
+        }
+      ]
+    }
+  }
+]
