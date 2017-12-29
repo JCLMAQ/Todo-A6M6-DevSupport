@@ -6,8 +6,7 @@
   </mat-card-title>
   <mat-card-content>
     <mat-table  #todoList [dataSource]="todos"
-                matSort (matSortChange)="onSort(dir, sortables)"
-                direction="let dir" sortables="let sortables">
+                matSort (matSortChange)="onSort()">
       <ng-container matColumnDef="ID">
         <mat-header-cell *matHeaderCellDef mat-sort-header>ID.</mat-header-cell>
         <mat-cell *matCellDef="let one" [ngClass]="{done:one.done}">{{one.ID}}</mat-cell>
@@ -41,6 +40,10 @@
     </mat-table>
     <mat-paginator #paginator [pageSize]="10" [length]="count" (page)="onNavigate($event)">
     </mat-paginator>
+    <button mat-button (click)="create()">
+      <mat-icon>add</mat-icon>
+      Create new
+    </button>
     <div *ngIf="current">
       <div class="container">
         <h1>Details of the todo "{{current.ID}}"</h1>

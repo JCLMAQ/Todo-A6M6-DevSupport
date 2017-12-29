@@ -93,4 +93,9 @@ export class TodoListComponent{
       });
     }
   }
+  async create(todo){
+    const Todo = await this.todoService.getClass();
+    this.current = Todo.create();
+    this.editable = true;
+  }
 }
