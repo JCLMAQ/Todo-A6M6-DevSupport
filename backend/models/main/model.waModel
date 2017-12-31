@@ -7,24 +7,218 @@
 				"panelColor": "#eee",
 				"panel": {
 					"isOpen": "true",
+					"pathVisible": false,
 					"position": {
-						"X": 25,
-						"Y": 20
+						"X": 56,
+						"Y": 52
+					}
+				}
+			},
+			"User": {
+				"panelColor": "#eee",
+				"panel": {
+					"isOpen": "true",
+					"position": {
+						"X": 844,
+						"Y": 33
 					},
-					"pathVisible": true
+					"pathVisible": false
+				}
+			},
+			"TodoUser": {
+				"panelColor": "#4FA997",
+				"panel": {
+					"isOpen": "true",
+					"position": {
+						"X": 342,
+						"Y": 53
+					},
+					"pathVisible": false
+				}
+			},
+			"UserTodoAssign": {
+				"panelColor": "#D7E3BC",
+				"panel": {
+					"isOpen": "true",
+					"position": {
+						"X": 605,
+						"Y": 34
+					},
+					"pathVisible": false
+				}
+			},
+			"Choice": {
+				"panelColor": "#D88CFF",
+				"panel": {
+					"isOpen": "true",
+					"position": {
+						"X": 48,
+						"Y": 626
+					},
+					"pathVisible": false
+				}
+			},
+			"TodoUserRole": {
+				"panelColor": "#D7E3BC",
+				"panel": {
+					"isOpen": "true",
+					"position": {
+						"X": 50,
+						"Y": 414
+					},
+					"pathVisible": false
 				}
 			}
 		},
 		"model": {
 			"scriptMode": "manual",
-			"workspaceLeft": 0,
-			"workspaceTop": 0
+			"workspaceLeft": 734,
+			"workspaceTop": 0,
+			"lastScriptLocation": {
+				"User": {
+					"method": "User/User-methods.js"
+				}
+			}
 		}
 	},
 	"dataClasses": [
 		{
-			"collectionName": "Todos",
+			"name": "Todo",
 			"className": "Todo",
+			"collectionName": "Todos",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"unique": true,
+					"autosequence": true,
+					"autogenerate": true,
+					"type": "uuid",
+					"primKey": true
+				},
+				{
+					"name": "description",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "done",
+					"kind": "storage",
+					"scope": "public",
+					"type": "bool"
+				},
+				{
+					"name": "subTodos",
+					"kind": "relatedEntity",
+					"type": "Todo",
+					"path": "Todo",
+					"scope": "public"
+				},
+				{
+					"name": "mainTodo",
+					"scope": "public",
+					"reversePath": true,
+					"path": "subTodos",
+					"type": "Todos",
+					"kind": "relatedEntities"
+				},
+				{
+					"name": "assignedTo",
+					"scope": "public",
+					"reversePath": true,
+					"path": "todoAssigned",
+					"type": "TodoUsers",
+					"kind": "relatedEntities"
+				},
+				{
+					"name": "users",
+					"scope": "public",
+					"reversePath": false,
+					"path": "assignedTo.todosAssigned",
+					"type": "UserTodoAssign",
+					"kind": "relatedEntities"
+				}
+			]
+		},
+		{
+			"name": "User",
+			"className": "User",
+			"collectionName": "UserCollection",
+			"scope": "public",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"scope": "public",
+					"type": "uuid",
+					"primKey": true,
+					"autosequence": true,
+					"unique": true,
+					"autogenerate": true
+				},
+				{
+					"name": "email",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "password",
+					"kind": "calculated",
+					"scope": "public",
+					"type": "string",
+					"scriptKind": "javascript"
+				},
+				{
+					"name": "HA1Key",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "photo",
+					"kind": "storage",
+					"scope": "public",
+					"type": "image"
+				},
+				{
+					"name": "role",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				},
+				{
+					"name": "fullName",
+					"kind": "storage",
+					"scope": "public",
+					"type": "string"
+				}
+			],
+			"methods": [
+				{
+					"name": "addUser",
+					"applyTo": "dataClass",
+					"scope": "public",
+					"from": "$mainModel.User.methods.addUser",
+					"allowedOnHTTPGET": false,
+					"userDefined": true
+				},
+				{
+					"name": "validatePassword",
+					"applyTo": "entity",
+					"scope": "publicOnServer",
+					"from": "$mainModel.User.entityMethods.validatePassword",
+					"allowedOnHTTPGET": false,
+					"userDefined": true
+				}
+			]
+		},
+		{
+			"collectionName": "TodoUsers",
+			"className": "TodoUser",
 			"attributes": [
 				{
 					"name": "ID",
@@ -36,16 +230,124 @@
 					"autogenerate": true
 				},
 				{
-					"name": "description",
+					"name": "assignOpen",
+					"scope": "public",
+					"type": "date",
+					"kind": "storage"
+				},
+				{
+					"name": "assignDue",
+					"scope": "public",
+					"type": "date",
+					"kind": "storage"
+				},
+				{
+					"name": "assignDone",
+					"scope": "public",
+					"type": "date",
+					"kind": "storage"
+				},
+				{
+					"name": "comments",
 					"scope": "public",
 					"type": "string",
 					"kind": "storage"
 				},
 				{
-					"name": "done",
+					"name": "todoAssigned",
+					"kind": "relatedEntity",
+					"type": "Todo",
+					"path": "Todo",
+					"scope": "public"
+				},
+				{
+					"name": "roleOfUser",
 					"scope": "public",
-					"type": "bool",
+					"type": "string",
 					"kind": "storage"
+				},
+				{
+					"name": "todosAssigned",
+					"kind": "relatedEntity",
+					"type": "UserTodoAssign",
+					"path": "UserTodoAssign",
+					"scope": "public"
+				},
+				{
+					"name": "todoUserRoles",
+					"scope": "public",
+					"reversePath": true,
+					"path": "todoUsers",
+					"type": "TodoUserRoles",
+					"kind": "relatedEntities"
+				}
+			]
+		},
+		{
+			"collectionName": "ChoiceCollection",
+			"className": "Choice",
+			"attributes": [
+				{
+					"name": "ID",
+					"kind": "storage",
+					"type": "long",
+					"autosequence": "true",
+					"unique": "true",
+					"primKey": "true"
+				},
+				{
+					"name": "choiceCategory",
+					"scope": "public",
+					"type": "string",
+					"kind": "storage"
+				},
+				{
+					"name": "choiceDescription",
+					"scope": "public",
+					"type": "string",
+					"kind": "storage"
+				}
+			]
+		},
+		{
+			"collectionName": "UserTodoAssignCollection",
+			"className": "UserTodoAssign",
+			"extends": "User",
+			"attributes": [
+				{
+					"name": "assignedTodos",
+					"scope": "public",
+					"reversePath": true,
+					"path": "todosAssigned",
+					"type": "TodoUsers",
+					"kind": "relatedEntities"
+				},
+				{
+					"name": "todos",
+					"scope": "public",
+					"reversePath": false,
+					"path": "assignedTodos.todoAssigned",
+					"type": "Todo",
+					"kind": "relatedEntities"
+				}
+			]
+		},
+		{
+			"collectionName": "TodoUserRoles",
+			"className": "TodoUserRole",
+			"extends": "Choice",
+			"restrictingQuery": [
+				{
+					"queryStatement": "choiceCategory = 'TodoUserRole'"
+				}
+			],
+			"attributes": [
+				{
+					"name": "todoUsers",
+					"scope": "public",
+					"path": "TodoUser",
+					"type": "TodoUser",
+					"kind": "relatedEntity"
 				}
 			]
 		}

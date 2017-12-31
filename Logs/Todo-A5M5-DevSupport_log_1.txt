@@ -85,3 +85,115 @@
 2017-12-29 16:06:56 [wakanda.Todo-A5M5-DevSupport] INFO - "Todo-A5M5-DevSupport" solution started
 2017-12-29 16:06:56 [wakanda] INFO - "Todo-A5M5-DevSupport" solution has been successfully opened for running (duration: 712 ms)
 2017-12-29 16:06:56 [wakanda.supervisor] INFO - solution opened
+2017-12-30 22:15:12 [wakanda.Todo-A5M5-DevSupport] INFO - Users and groups directory opened
+2017-12-30 22:15:12 [wakanda.Todo-A5M5-DevSupport.backend] INFO - Datastore opened
+2017-12-30 22:15:12 [wakanda.Todo-A5M5-DevSupport.backend] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8081,"securedPort":443,"mode":"http"}
+2017-12-30 22:15:12 [wakanda.Todo-A5M5-DevSupport.backend] INFO - "backend" project opened
+2017-12-30 22:15:12 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8080,"securedPort":4433,"mode":"http"}
+2017-12-30 22:15:12 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - "ServerAdmin" project opened
+2017-12-30 22:15:12 [wakanda.Todo-A5M5-DevSupport] INFO - "Todo-A5M5-DevSupport" solution opened
+2017-12-30 22:15:12 [wakanda] INFO - Starts "Todo-A5M5-DevSupport" solution
+2017-12-30 22:15:15 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] WARN - Failed to set the required key and certificate for secure connections
+2017-12-30 22:15:16 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - HTTP Server started
+2017-12-30 22:15:16 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - "ServerAdmin" project started
+2017-12-30 22:15:18 [wakanda.Todo-A5M5-DevSupport.backend] INFO - HTTP Server started
+2017-12-30 22:15:18 [wakanda.Todo-A5M5-DevSupport.backend] INFO - "backend" project started
+2017-12-30 22:15:18 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - Executes the bootstrap file(s)
+2017-12-30 22:15:18 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - Bootstrap file(s) executed
+2017-12-30 22:15:18 [wakanda.Todo-A5M5-DevSupport.backend] INFO - Executes the bootstrap file(s)
+2017-12-30 22:15:18 [wakanda.Todo-A5M5-DevSupport.backend] INFO - Bootstrap file(s) executed
+2017-12-30 22:15:18 [wakanda.Todo-A5M5-DevSupport] INFO - "Todo-A5M5-DevSupport" solution started
+2017-12-30 22:15:18 [wakanda] INFO - "Todo-A5M5-DevSupport" solution has been successfully opened for running (duration: 7364 ms)
+2017-12-30 22:15:18 [wakanda.supervisor] INFO - solution opened
+2017-12-31 00:02:55 [wakanda] INFO - Stops "Todo-A5M5-DevSupport" solution
+2017-12-31 00:02:58 [wakanda.Todo-A5M5-DevSupport.backend] INFO - "backend" project stopped
+2017-12-31 00:03:02 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - "ServerAdmin" project stopped
+2017-12-31 00:03:02 [wakanda.Todo-A5M5-DevSupport] INFO - "Todo-A5M5-DevSupport" solution stopped
+2017-12-31 00:03:02 [wakanda] INFO - Closes "Todo-A5M5-DevSupport" solution
+2017-12-31 00:03:02 [wakanda.Todo-A5M5-DevSupport.backend] INFO - "backend" project closed
+2017-12-31 00:03:02 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - "ServerAdmin" project closed
+2017-12-31 00:03:02 [wakanda.Todo-A5M5-DevSupport] INFO - "Todo-A5M5-DevSupport" solution closed
+2017-12-31 00:03:28 [wakanda.Todo-A5M5-DevSupport] INFO - Users and groups directory opened
+2017-12-31 00:03:28 [wakanda.Todo-A5M5-DevSupport.backend] INFO - Datastore opened
+2017-12-31 00:03:28 [wakanda.Todo-A5M5-DevSupport.backend] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8081,"securedPort":443,"mode":"http"}
+2017-12-31 00:03:28 [wakanda.Todo-A5M5-DevSupport.backend] INFO - "backend" project opened
+2017-12-31 00:03:28 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8080,"securedPort":4433,"mode":"http"}
+2017-12-31 00:03:28 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - "ServerAdmin" project opened
+2017-12-31 00:03:28 [wakanda.Todo-A5M5-DevSupport] INFO - "Todo-A5M5-DevSupport" solution opened
+2017-12-31 00:03:28 [wakanda] INFO - Starts "Todo-A5M5-DevSupport" solution
+2017-12-31 00:03:31 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] WARN - Failed to set the required key and certificate for secure connections
+2017-12-31 00:03:33 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - HTTP Server started
+2017-12-31 00:03:33 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - "ServerAdmin" project started
+2017-12-31 00:03:34 [wakanda.Todo-A5M5-DevSupport.backend] INFO - HTTP Server started
+2017-12-31 00:03:34 [wakanda.Todo-A5M5-DevSupport.backend] INFO - "backend" project started
+2017-12-31 00:03:34 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - Executes the bootstrap file(s)
+2017-12-31 00:03:34 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - Bootstrap file(s) executed
+2017-12-31 00:03:34 [wakanda.Todo-A5M5-DevSupport.backend] INFO - Executes the bootstrap file(s)
+2017-12-31 00:03:35 [wakanda.Todo-A5M5-DevSupport.backend] INFO - Bootstrap file(s) executed
+2017-12-31 00:03:35 [wakanda.Todo-A5M5-DevSupport] INFO - "Todo-A5M5-DevSupport" solution started
+2017-12-31 00:03:35 [wakanda] INFO - "Todo-A5M5-DevSupport" solution has been successfully opened for running (duration: 7491 ms)
+2017-12-31 00:03:35 [wakanda.supervisor] INFO - solution opened
+2017-12-31 00:04:07 [wakanda] INFO - Stops "Todo-A5M5-DevSupport" solution
+2017-12-31 00:04:10 [wakanda.Todo-A5M5-DevSupport.backend] INFO - "backend" project stopped
+2017-12-31 00:04:13 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - "ServerAdmin" project stopped
+2017-12-31 00:04:13 [wakanda.Todo-A5M5-DevSupport] INFO - "Todo-A5M5-DevSupport" solution stopped
+2017-12-31 00:04:13 [wakanda] INFO - Closes "Todo-A5M5-DevSupport" solution
+2017-12-31 00:04:13 [wakanda.Todo-A5M5-DevSupport.backend] INFO - "backend" project closed
+2017-12-31 00:04:13 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - "ServerAdmin" project closed
+2017-12-31 00:04:14 [wakanda.Todo-A5M5-DevSupport] INFO - "Todo-A5M5-DevSupport" solution closed
+2017-12-31 00:04:30 [wakanda.Todo-A5M5-DevSupport] INFO - Users and groups directory opened
+2017-12-31 00:04:30 [wakanda.Todo-A5M5-DevSupport.backend] INFO - Datastore opened
+2017-12-31 00:04:30 [wakanda.Todo-A5M5-DevSupport.backend] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8081,"securedPort":443,"mode":"http"}
+2017-12-31 00:04:30 [wakanda.Todo-A5M5-DevSupport.backend] INFO - "backend" project opened
+2017-12-31 00:04:30 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8080,"securedPort":4433,"mode":"http"}
+2017-12-31 00:04:30 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - "ServerAdmin" project opened
+2017-12-31 00:04:30 [wakanda.Todo-A5M5-DevSupport] INFO - "Todo-A5M5-DevSupport" solution opened
+2017-12-31 00:04:30 [wakanda] INFO - Starts "Todo-A5M5-DevSupport" solution
+2017-12-31 00:04:33 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] WARN - Failed to set the required key and certificate for secure connections
+2017-12-31 00:04:34 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - HTTP Server started
+2017-12-31 00:04:34 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - "ServerAdmin" project started
+2017-12-31 00:04:35 [wakanda.Todo-A5M5-DevSupport.backend] INFO - HTTP Server started
+2017-12-31 00:04:35 [wakanda.Todo-A5M5-DevSupport.backend] INFO - "backend" project started
+2017-12-31 00:04:35 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - Executes the bootstrap file(s)
+2017-12-31 00:04:35 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - Bootstrap file(s) executed
+2017-12-31 00:04:35 [wakanda.Todo-A5M5-DevSupport.backend] INFO - Executes the bootstrap file(s)
+2017-12-31 00:04:35 [wakanda.Todo-A5M5-DevSupport.backend] INFO - Bootstrap file(s) executed
+2017-12-31 00:04:35 [wakanda.Todo-A5M5-DevSupport] INFO - "Todo-A5M5-DevSupport" solution started
+2017-12-31 00:04:35 [wakanda] INFO - "Todo-A5M5-DevSupport" solution has been successfully opened for running (duration: 5869 ms)
+2017-12-31 00:04:35 [wakanda.supervisor] INFO - solution opened
+2017-12-31 00:06:35 [wakanda] INFO - Stops "Todo-A5M5-DevSupport" solution
+2017-12-31 00:06:37 [wakanda.Todo-A5M5-DevSupport.backend] INFO - "backend" project stopped
+2017-12-31 00:06:41 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - "ServerAdmin" project stopped
+2017-12-31 00:06:41 [wakanda.Todo-A5M5-DevSupport] INFO - "Todo-A5M5-DevSupport" solution stopped
+2017-12-31 00:06:41 [wakanda] INFO - Closes "Todo-A5M5-DevSupport" solution
+2017-12-31 00:06:41 [wakanda.Todo-A5M5-DevSupport.backend] INFO - "backend" project closed
+2017-12-31 00:06:41 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - "ServerAdmin" project closed
+2017-12-31 00:06:41 [wakanda.Todo-A5M5-DevSupport] INFO - "Todo-A5M5-DevSupport" solution closed
+2017-12-31 00:06:57 [wakanda.Todo-A5M5-DevSupport] INFO - Users and groups directory opened
+2017-12-31 00:06:57 [wakanda.Todo-A5M5-DevSupport.backend] INFO - Datastore opened
+2017-12-31 00:06:57 [wakanda.Todo-A5M5-DevSupport.backend] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8081,"securedPort":443,"mode":"http"}
+2017-12-31 00:06:57 [wakanda.Todo-A5M5-DevSupport.backend] INFO - "backend" project opened
+2017-12-31 00:06:57 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8080,"securedPort":4433,"mode":"http"}
+2017-12-31 00:06:57 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - "ServerAdmin" project opened
+2017-12-31 00:06:57 [wakanda.Todo-A5M5-DevSupport] INFO - "Todo-A5M5-DevSupport" solution opened
+2017-12-31 00:06:57 [wakanda] INFO - Starts "Todo-A5M5-DevSupport" solution
+2017-12-31 00:06:59 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] WARN - Failed to set the required key and certificate for secure connections
+2017-12-31 00:07:00 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - HTTP Server started
+2017-12-31 00:07:00 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - "ServerAdmin" project started
+2017-12-31 00:07:02 [wakanda.Todo-A5M5-DevSupport.backend] INFO - HTTP Server started
+2017-12-31 00:07:02 [wakanda.Todo-A5M5-DevSupport.backend] INFO - "backend" project started
+2017-12-31 00:07:02 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - Executes the bootstrap file(s)
+2017-12-31 00:07:02 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - Bootstrap file(s) executed
+2017-12-31 00:07:02 [wakanda.Todo-A5M5-DevSupport.backend] INFO - Executes the bootstrap file(s)
+2017-12-31 00:07:02 [wakanda.Todo-A5M5-DevSupport.backend] INFO - Bootstrap file(s) executed
+2017-12-31 00:07:02 [wakanda.Todo-A5M5-DevSupport] INFO - "Todo-A5M5-DevSupport" solution started
+2017-12-31 00:07:02 [wakanda] INFO - "Todo-A5M5-DevSupport" solution has been successfully opened for running (duration: 4782 ms)
+2017-12-31 00:07:02 [wakanda.supervisor] INFO - solution opened
+2017-12-31 00:07:16 [wakanda] INFO - Stops "Todo-A5M5-DevSupport" solution
+2017-12-31 00:07:18 [wakanda.Todo-A5M5-DevSupport.backend] INFO - "backend" project stopped
+2017-12-31 00:07:21 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - "ServerAdmin" project stopped
+2017-12-31 00:07:21 [wakanda.Todo-A5M5-DevSupport] INFO - "Todo-A5M5-DevSupport" solution stopped
+2017-12-31 00:07:21 [wakanda] INFO - Closes "Todo-A5M5-DevSupport" solution
+2017-12-31 00:07:21 [wakanda.Todo-A5M5-DevSupport.backend] INFO - "backend" project closed
+2017-12-31 00:07:21 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - "ServerAdmin" project closed
+2017-12-31 00:07:22 [wakanda.Todo-A5M5-DevSupport] INFO - "Todo-A5M5-DevSupport" solution closed
