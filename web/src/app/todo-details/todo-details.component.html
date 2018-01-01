@@ -1,28 +1,1 @@
-<div class="container">
-  <h1>Details of the todo "{{current.ID}}"</h1>
-  <mat-form-field>
-    <input matInput placeholder="ID" type="text" disabled [value]="current.ID">
-  </mat-form-field>
-  <mat-form-field>
-    <input  matInput placeholder="Description"
-            type="text" [(ngModel)]="current.description"
-            [disabled]="!editable">
-  </mat-form-field>
-  <mat-checkbox [(ngModel)]="current.done" [disabled]="!editable"></mat-checkbox>
-</div>
-<button mat-button *ngIf="!editable" (click)="editable=!editable">
-  <mat-icon>edit</mat-icon>
-  Edit
-</button>
-<button mat-button *ngIf="editable" (click)="save(current)">
-  <mat-icon>save</mat-icon>
-  Save
-</button>
-<button mat-button (click)="remove(current)">
-  <mat-icon>delete</mat-icon>
-  Remove
-</button>
-<button mat-button routerLink="/todos">
-  <mat-icon>list</mat-icon>
-  Go to list
-</button>
+<div class="container">  <h1>Details of the todo "{{current.ID}}"</h1>  <mat-form-field>    <input matInput placeholder="ID" type="text" disabled [value]="current.ID">  </mat-form-field>  <mat-form-field>    <input  matInput placeholder="Description"            type="text" [(ngModel)]="current.description"            [disabled]="!editable">  </mat-form-field>  <mat-checkbox [(ngModel)]="current.done" [disabled]="!editable"></mat-checkbox></div><button mat-button *ngIf="!editable" (click)="editable=!editable">  <mat-icon>edit</mat-icon>  Edit</button><button mat-button *ngIf="editable" (click)="save(current)">  <mat-icon>save</mat-icon>  Save</button><button mat-button (click)="remove(current)">  <mat-icon>delete</mat-icon>  Remove</button><button mat-button *ngIf="editable" (click) = "cancel()">  <mat-icon>cancel</mat-icon>  Cancel</button><button mat-button routerLink="/todos">  <mat-icon>list</mat-icon>  Go to list</button>
