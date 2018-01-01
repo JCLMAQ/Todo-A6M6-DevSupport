@@ -92,3 +92,5 @@ Logs/Todo-A5M5-DevSupport_log_1.txt
 backend/database/data/data.WakTDef
 *.WakTDef
 *.txt
+*.WakTDef
+*.txt
