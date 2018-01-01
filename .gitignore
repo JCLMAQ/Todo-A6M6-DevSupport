@@ -89,3 +89,4 @@ Thumbs.db
 *.WakTDef
 Logs/Todo-A5M5-DevSupport_log_1.txt
 *.WakTDef
+backend/database/data/data.WakTDef
