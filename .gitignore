@@ -86,3 +86,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+*.WakTDef
+Logs/Todo-A5M5-DevSupport_log_1.txt
+*.WakTDef
