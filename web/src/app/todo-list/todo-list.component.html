@@ -1,1 +1,118 @@
-<mat-card>  <mat-card-title>    <mat-input-container>      <input matInput placeholder="Search for a todo" [value]="" (keyup)="search($event.target.value, $event)">    </mat-input-container>    <button mat-button (click)="create()">      <mat-icon>add</mat-icon>      Create new    </button>      </mat-card-title>    <mat-card-content>  <!-- Start of the drawer panel -->  	  <mat-drawer-container>	  	<mat-drawer-content>			<button mat-mini-fab color="primary" style="float: right;" (click)="isOpenSidePanel=!isOpenSidePanel">				<mat-icon *ngIf= "isOpenSidePanel">chevron_left</mat-icon>							<mat-icon *ngIf= "!isOpenSidePanel">chevron_right</mat-icon>			</button>		<!-- Start of the list -->  		    <mat-table  #todoList [dataSource]="todos"		                matSort (matSortChange)="onSort()">		      <ng-container matColumnDef="ID">		        <mat-header-cell *matHeaderCellDef mat-sort-header>ID.</mat-header-cell>		        <mat-cell *matCellDef="let one" [ngClass]="{done:one.done}">{{one.ID}}</mat-cell>		      </ng-container>		      <ng-container matColumnDef="description">		        <mat-header-cell *matHeaderCellDef mat-sort-header>Description</mat-header-cell>		        <mat-cell *matCellDef="let one" [ngClass]="{done:one.done}">{{one.description}}</mat-cell>		      </ng-container>		      <ng-container matColumnDef="done">		        <mat-header-cell *matHeaderCellDef mat-sort-header>Completed</mat-header-cell>		        <mat-cell *matCellDef="let one">		          <mat-checkbox [checked]="one.done" [disabled]="true"></mat-checkbox>		        </mat-cell>		      </ng-container>		      <ng-container matColumnDef="tools">		        <mat-header-cell *matHeaderCellDef> Tools </mat-header-cell>		        <mat-cell *matCellDef="let one">		          <button mat-icon-button routerLink="{{one.ID}}">		            <mat-icon>edit</mat-icon>		          </button>		          <button mat-icon-button routerLink="{{one.ID}}/view">		            <mat-icon>remove_red_eye</mat-icon>		          </button>		          <button mat-icon-button (click)="remove(one)">		            <mat-icon>delete</mat-icon>		          </button>		        </mat-cell>		      </ng-container>		      <mat-header-row *matHeaderRowDef="cols"></mat-header-row>		      <mat-row [class.selected]="current && row.ID === current.ID" *matRowDef="let row; columns: cols;" (click)="select(row)"></mat-row>		    </mat-table>		    <mat-paginator #paginator [pageSize]="10" [length]="count" (page)="onNavigate($event)">		    </mat-paginator>		<!-- End of the list -->		</mat-drawer-content>			    <mat-drawer #drawer [opened]="!isOpenSidePanel" mode="side" position="end">		<mat-card *ngIf="current">			<mat-card-title>				<h1>Details of the todo "{{current.ID}}"</h1>			</mat-card-title>			<mat-card-content>				<!-- Start of the detail form -->				<mat-form-field>			       <input matInput placeholder="ID" type="text" disabled [value]="current.ID">		        </mat-form-field>		        <mat-form-field>		          <input matInput placeholder="Description" type="text" [(ngModel)]="current.description" [disabled]="!editable">		        </mat-form-field>		        <mat-checkbox [(ngModel)]="current.done" [disabled]="!editable"></mat-checkbox>			        <!-- End of the detail form -->			</mat-card-content>			<mat-card-footer>				<button mat-button *ngIf="!editable" (click)="editable=!editable">			        <mat-icon>edit</mat-icon>			        Edit				</button>				<button mat-button *ngIf="editable" (click)="save(current)">					<mat-icon>save</mat-icon>					Save				</button>				<button mat-button *ngIf="editable" (click)="cancel()">					<mat-icon>cancel</mat-icon>					Cancel				</button>				<button mat-button (click)="remove(current)">					<mat-icon>delete</mat-icon>					Remove				</button>			</mat-card-footer>		</mat-card>			</mat-drawer>	<!-- End of the drawer panel -->  	  </mat-drawer-container>  </mat-card-content>  <mat-card-footer><span *ngIf="error">{{error}}</span></mat-card-footer></mat-card>
+<mat-card>
+  <mat-card-title>
+    <mat-input-container>
+      <input matInput placeholder="Search for a todo" [value]="" (keyup)="search($event.target.value, $event)">
+    </mat-input-container>
+    <button mat-button (click)="create()">
+      <mat-icon>add</mat-icon>
+      Create new
+    </button>    
+  </mat-card-title>
+  
+  <mat-card-content>
+  <!-- Start of the drawer panel -->  
+	  <mat-drawer-container>
+	  	<mat-drawer-content>
+			<button mat-mini-fab color="primary" style="float: right;" (click)="isOpenSidePanel=!isOpenSidePanel">
+				<mat-icon *ngIf= "isOpenSidePanel">chevron_left</mat-icon>
+			
+				<mat-icon *ngIf= "!isOpenSidePanel">chevron_right</mat-icon>
+			</button>
+
+		<!-- Start of the list -->  
+		    <mat-table  #todoList [dataSource]="todos"
+		                matSort (matSortChange)="onSort()">
+		      <ng-container matColumnDef="ID">
+		        <mat-header-cell *matHeaderCellDef mat-sort-header>ID.</mat-header-cell>
+		        <mat-cell *matCellDef="let one" [ngClass]="{done:one.done}">{{one.ID}}</mat-cell>
+		      </ng-container>
+		      <ng-container matColumnDef="description">
+		        <mat-header-cell *matHeaderCellDef mat-sort-header>Description</mat-header-cell>
+		        <mat-cell *matCellDef="let one" [ngClass]="{done:one.done}">{{one.description}}</mat-cell>
+		      </ng-container>
+		      <ng-container matColumnDef="done">
+		        <mat-header-cell *matHeaderCellDef mat-sort-header>Completed</mat-header-cell>
+		        <mat-cell *matCellDef="let one">
+		          <mat-checkbox [checked]="one.done" [disabled]="true"></mat-checkbox>
+		        </mat-cell>
+		      </ng-container>
+		      <ng-container matColumnDef="tools">
+		        <mat-header-cell *matHeaderCellDef> Tools </mat-header-cell>
+		        <mat-cell *matCellDef="let one">
+		          <button mat-icon-button routerLink="{{one.ID}}">
+		            <mat-icon>edit</mat-icon>
+		          </button>
+		          <button mat-icon-button routerLink="{{one.ID}}/view">
+		            <mat-icon>remove_red_eye</mat-icon>
+		          </button>
+		          <button mat-icon-button (click)="remove(one)">
+		            <mat-icon>delete</mat-icon>
+		          </button>
+		        </mat-cell>
+		      </ng-container>
+		      <mat-header-row *matHeaderRowDef="cols"></mat-header-row>
+		      <mat-row [class.selected]="current && row.ID === current.ID" *matRowDef="let row; columns: cols;" (click)="select(row)"></mat-row>
+		    </mat-table>
+		    <mat-paginator #paginator [pageSize]="10" [length]="count" (page)="onNavigate($event)">
+		    </mat-paginator>
+		<!-- End of the list -->
+		</mat-drawer-content>
+	
+	
+	    <mat-drawer #drawer [opened]="!isOpenSidePanel" mode="side" position="end">
+		<mat-card *ngIf="current">
+			<mat-card-title>
+				<h1>Details of the todo "{{current.ID}}"</h1>
+			</mat-card-title>
+			<mat-card-content>
+				<!-- Start of the detail form -->
+				<mat-form-field>
+			       <input matInput placeholder="ID" type="text" disabled [value]="current.ID">
+		        </mat-form-field>
+		        <mat-form-field>
+		          <input matInput placeholder="Description" type="text" [(ngModel)]="current.description" [disabled]="!editable">
+		        </mat-form-field>
+		        <mat-checkbox [(ngModel)]="current.done" [disabled]="!editable"></mat-checkbox>	
+		        <!-- End of the detail form -->
+			</mat-card-content>
+			<mat-card-footer>
+					<button mat-button (click)="firstRecord(current)">
+							<mat-icon>first_page</mat-icon>
+							First
+						</button>
+						<button mat-button (click)="previousRecord(current)">
+							<mat-icon>chevron_left</mat-icon>
+							Previous
+						</button>
+				<button mat-button *ngIf="!editable" (click)="editable=!editable">
+			        <mat-icon>edit</mat-icon>
+			        Edit
+				</button>
+				<button mat-button *ngIf="editable" (click)="save(current)">
+					<mat-icon>save</mat-icon>
+					Save
+				</button>
+				<button mat-button *ngIf="editable" (click)="cancel()">
+					<mat-icon>cancel</mat-icon>
+					Cancel
+				</button>
+				<button mat-button (click)="remove(current)">
+					<mat-icon>delete</mat-icon>
+					Remove
+				</button>
+				<button mat-button (click)="nextRecord(current)">
+					<mat-icon>chevron_right</mat-icon>
+					Next
+				</button>
+				<button mat-button (click)="lastRecord(current)">
+					<mat-icon>last_page</mat-icon>
+					Last
+				</button>
+			</mat-card-footer>
+		</mat-card>	
+		</mat-drawer>
+	<!-- End of the drawer panel -->  
+	  </mat-drawer-container>
+  </mat-card-content>
+  <mat-card-footer><span *ngIf="error">{{error}}</span></mat-card-footer>
+</mat-card>
