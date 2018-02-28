@@ -1,1 +1,39 @@
-mat-row:hover,mat-row.selected{  background-color: #f1f1f1;}mat-row{  cursor: pointer;}.done {  text-decoration: line-through;}mat-card-title,mat-input-container{  text-align: center;}mat-card-title>mat-input-container{  width: 450px;}.app-sidenav-filler {  flex: 1 1 auto;}mat-drawer {  width: 500px;  height: 600px;}.mat-mini-pos {	}
+mat-row:hover,
+mat-row.selected{
+  background-color: #f1f1f1;
+}
+
+mat-row{
+  cursor: pointer;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+
+mat-card-title,
+mat-input-container{
+  text-align: center;
+}
+
+
+mat-card-title>mat-input-container{
+  width: 450px;
+}
+
+.app-sidenav-filler {
+  flex: 1 1 auto;
+}
+mat-drawer {
+  width: 500px;
+  height: 600px;
+}
+mat-table {
+  
+  height: 600px;
+}
+
+.mat-mini-pos {
+	
+}
