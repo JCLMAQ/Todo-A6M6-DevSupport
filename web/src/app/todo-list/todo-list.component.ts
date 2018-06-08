@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { Store } from "@ngrx/store";
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { ACTION, IState, ITodo, IAppState } from "../shared/todo.reducer";
 import { MatTableDataSource, MatPaginator, MatSort } from '@angular/material';
 import { TodoService } from '../shared/todo.service';
