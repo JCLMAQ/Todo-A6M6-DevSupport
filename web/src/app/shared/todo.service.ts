@@ -3,7 +3,7 @@ import { Store } from "@ngrx/store";
 
 import { WakandaService } from "./wakanda.service";
 import { ACTION, ITodo } from "./todo.reducer";
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog } from '@angular/material';
 import { ConfirmComponent } from './confirm/confirm.component';
 
 @Injectable()

@@ -369,3 +369,39 @@
 2018-03-01 17:55:15 [wakanda.Todo-A5M5-DevSupport] INFO - "Todo-A5M5-DevSupport" solution started
 2018-03-01 17:55:15 [wakanda] INFO - "Todo-A5M5-DevSupport" solution has been successfully opened for running (duration: 1213 ms)
 2018-03-01 17:55:15 [wakanda.supervisor] INFO - solution opened
+2019-06-24 23:02:55 [wakanda.Todo-A5M5-DevSupport] INFO - Users and groups directory opened
+2019-06-24 23:02:55 [IndexManager] INFO - Index  on Choice.ID built in 0 ms
+2019-06-24 23:02:55 [IndexManager] INFO - Index  on Todo.ID built in 0 ms
+2019-06-24 23:02:55 [IndexManager] INFO - Index  on Todo.subTodos built in 0 ms
+2019-06-24 23:02:55 [IndexManager] INFO - Index  on TodoUser.ID built in 0 ms
+2019-06-24 23:02:55 [IndexManager] INFO - Index  on TodoUser.todoAssigned built in 0 ms
+2019-06-24 23:02:55 [IndexManager] INFO - Index  on TodoUser.todosAssigned built in 0 ms
+2019-06-24 23:02:55 [IndexManager] INFO - Index  on Choice.todoUsers built in 0 ms
+2019-06-24 23:02:55 [IndexManager] INFO - Index  on User.ID built in 0 ms
+2019-06-24 23:02:55 [wakanda.Todo-A5M5-DevSupport.backend] INFO - Datastore opened
+2019-06-24 23:02:55 [wakanda.Todo-A5M5-DevSupport.backend] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8081,"securedPort":443,"mode":"http"}
+2019-06-24 23:02:55 [wakanda.Todo-A5M5-DevSupport.backend] INFO - "backend" project opened
+2019-06-24 23:02:55 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - Publication settings loaded: {"hostName":"localhost","listen":"any","port":8080,"securedPort":4433,"mode":"http"}
+2019-06-24 23:02:55 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - "ServerAdmin" project opened
+2019-06-24 23:02:55 [wakanda.Todo-A5M5-DevSupport] INFO - "Todo-A5M5-DevSupport" solution opened
+2019-06-24 23:02:55 [wakanda] INFO - Starts "Todo-A5M5-DevSupport" solution
+2019-06-24 23:02:57 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] WARN - Failed to set the required key and certificate for secure connections
+2019-06-24 23:02:57 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - HTTP Server started
+2019-06-24 23:02:57 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - "ServerAdmin" project started
+2019-06-24 23:02:58 [wakanda.Todo-A5M5-DevSupport.backend] INFO - HTTP Server started
+2019-06-24 23:02:58 [wakanda.Todo-A5M5-DevSupport.backend] INFO - "backend" project started
+2019-06-24 23:02:58 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - Executes the bootstrap file(s)
+2019-06-24 23:02:58 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - Bootstrap file(s) executed
+2019-06-24 23:02:58 [wakanda.Todo-A5M5-DevSupport.backend] INFO - Executes the bootstrap file(s)
+2019-06-24 23:02:58 [wakanda.Todo-A5M5-DevSupport.backend] INFO - Bootstrap file(s) executed
+2019-06-24 23:02:58 [wakanda.Todo-A5M5-DevSupport] INFO - "Todo-A5M5-DevSupport" solution started
+2019-06-24 23:02:58 [wakanda] INFO - "Todo-A5M5-DevSupport" solution has been successfully opened for running (duration: 4626 ms)
+2019-06-24 23:02:58 [wakanda.supervisor] INFO - solution opened
+2019-06-24 23:07:01 [wakanda] INFO - Stops "Todo-A5M5-DevSupport" solution
+2019-06-24 23:07:02 [wakanda.Todo-A5M5-DevSupport.backend] INFO - "backend" project stopped
+2019-06-24 23:07:04 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - "ServerAdmin" project stopped
+2019-06-24 23:07:04 [wakanda.Todo-A5M5-DevSupport] INFO - "Todo-A5M5-DevSupport" solution stopped
+2019-06-24 23:07:04 [wakanda] INFO - Closes "Todo-A5M5-DevSupport" solution
+2019-06-24 23:07:04 [wakanda.Todo-A5M5-DevSupport.backend] INFO - "backend" project closed
+2019-06-24 23:07:04 [wakanda.Todo-A5M5-DevSupport.ServerAdmin] INFO - "ServerAdmin" project closed
+2019-06-24 23:07:05 [wakanda.Todo-A5M5-DevSupport] INFO - "Todo-A5M5-DevSupport" solution closed
