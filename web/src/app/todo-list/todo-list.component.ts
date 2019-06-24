@@ -2,7 +2,9 @@ import { Component, ViewChild } from '@angular/core';
 import { Store } from "@ngrx/store";
 import { Observable } from 'rxjs';
 import { ACTION, IState, ITodo, IAppState } from "../shared/todo.reducer";
-import { MatTableDataSource, MatPaginator, MatSort } from '@angular/material';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
+import { MatTableDataSource } from '@angular/material/table';
 import { TodoService } from '../shared/todo.service';
 import { ConfirmComponent } from '../shared/confirm/confirm.component';
 
